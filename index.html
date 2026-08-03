@@ -42,6 +42,21 @@ Garante fama mundial por abrigar relíquias inestimáveis da humanidade, incluin
 <p>O Sena divide Paris ao meio e suas margens históricas são consideradas Patrimônio da UNESCO.
 Ele conecta os principais monumentos através de 37 pontes e oferece banhos públicos gratuitos no verão.
 Seus tradicionais passeios de barco permitem contemplar a cidade e jantar sob a iluminação noturna.</p>
+<script>
+let curtiu = false;
+
+function curtir() {
+    let likes = document.getElementById("likes");
+
+    if (!curtiu) {
+        likes.textContent++;
+        curtiu = true;
+    } else {
+        likes.textContent--;
+        curtiu = false;
+    }
+}
+</script>
 </main>
     
 </body>
