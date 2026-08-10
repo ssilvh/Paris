@@ -66,19 +66,14 @@ Paris é considerada uma das capitais mundiais da moda. Grandes marcas e desfile
 O idioma oficial é o francês, mas em muitos pontos turísticos também é possível encontrar pessoas que falam inglês.
 </p>
 <script>
-let curtiu = false;
-
-function curtir() {
-    let likes = document.getElementById("likes");
-
-    if (!curtiu) {
-        likes.textContent++;
-        curtiu = true;
-    } else {
-        likes.textContent--;
-        curtiu = false;
-    }
+const botao=document.querySelector("button")
+botao.addEventListener("click", botaoClicado)
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
 </script>
+
 
 </main>
     
